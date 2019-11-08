@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="tictactoe.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="tictactoe.js">
+    </script>
+    <title> Tic-Tac-Toe </title>
+  </head>
+  <body onload="start();">
+    <h1> <u>2-Player Tic-Tac-Toe!</u> </h1>
+    <div id="message" align="center"> This will tell you who's turn it is </div>
+    <br>
+    <table border="5" align="center">
+      <tr>
+        <td id="1" onclick="place(this)";></td>
+        <td id="2" onclick="place(this)";></td>
+        <td id="3" onclick="place(this)";></td>
+      </tr>
+      <tr>
+        <td id="4" onclick="place(this)";></td>
+        <td id="5" onclick="place(this)";></td>
+        <td id="6" onclick="place(this)";></td>
+      </tr>
+      <tr>
+        <td id="7" onclick="place(this)";></td>
+        <td id="8" onclick="place(this)";></td>
+        <td id="9" onclick="place(this)";></td>
+      </tr>
+    </table>
+    <br>
+    <div id="clear">
+      <button onclick="start();"> <b>CLEAR BOARD and Play Again<b> </button>
+    </div>
+    <br>
+    <div id="score"> <u>SCOREBOARD</u> </div>
+    <div id="Xwins"> X WINS: 0</div>
+    <div id="Owins"> O WINS: 0</div>
+  </body>
+</html>
